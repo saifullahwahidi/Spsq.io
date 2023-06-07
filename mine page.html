@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="min style.css" />
+    <title>My Site</title>
+</head>
+
+<body>
+
+    <!--Head design -->
+    <div>
+        <span style="color: rgb(255, 255, 255); ">BTC -----> | </span>
+        <label class="hstatic">Bybit L:</label>
+        <label class="hstatic">Binance L:</label>
+        <label class="hstatic">Okex L:</label>
+        <label class="hstatic">FNG:</label>&nbsp;&nbsp;<label id="BTC__FNG" class="fafaf"></label>
+        <label class="hstatic">OI:</label>
+        <label class="hstatic">Max Pain:</label>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: rgb(255, 255, 255); ">ETH -----> | </span>
+        <label class="hstatic">Bybit L:</label>
+        <label class="hstatic">Binance L:</label>
+        <label class="hstatic">FNG :</label>
+        <label class="hstatic">OI :</label>
+        <label class="hstatic">Max Pain :</label>
+    </div>
+    <br>
+    <br>
+    <!-- First Table BTC block -->
+
+    <div class="inline">
+        <table style="width: auto;">
+            <tbody class="color">
+
+                <tr>
+                    <th colspan="2" class="hstatic">BTC PRICES</th>
+                </tr>
+                <tr>
+                    <td class="hstatic">GLOBAL 1H:</td>
+                    <td class="hstatic" id="space1">1 MIN: </td>
+
+                    <!-- binance_price -->
+                </tr>
+                <td class="fafaf">Binance:</td>
+                <td id="binance_BTC_PRICE" class="fafaf"></td>
+                </tr>
+
+
+
+                <!-- binance_index-->
+                <tr>
+                    <td class="statindex">Index:</td>
+                    <td id="binance_BTC_Index_price" class="fafaf"></td>
+                </tr>
+                <tr>
+                    <td id="binance__index"></td>
+                </tr>
+
+                <!-- bybit_price -->
+                <tr>
+                    <td class="fafaf">Bybit:</td>
+                    <td id="bybit_BTC_PRICE" class="fafaf"></td>
+                </tr>
+
+
+                <!-- bybit_index -->
+                <tr>
+                    <td class="statindex">Index:</td><td id="bybit_BTC_Price_index" class="fafaf"></td>
+                </tr>
+
+                <tr>
+                    <td id="bybit__index"></td>
+                </tr>
+
+
+                <!-- BitMex_Price -->
+
+                <td id="phemex__index"></td>
+                </tr>
+
+                <tr>
+                    <td class="fafaf">Bitmex:</td>
+                    <td id="bitmex_BTC_real__price" class="fafaf"></td>
+                </tr>
+
+                <!-- BitMex_Index -->
+                <tr>
+                    <td class="statindex">Index:</td><td class="fafaf" id="bitmex__BTC_index_price"></td>
+                </tr>
+                <tr>
+                    <td id="bitmex__index"></td>
+                </tr>
+
+
+
+                <!-- Okex_price -->
+                <tr>
+                    <td class="fafaf">Okex:</td><td id="okex_BTC_price" class="fafaf"> </td>
+             
+                </tr>
+
+
+                <!-- Okex_index -->
+                <tr>
+                    <td class="statindex">Index:</td><td class="fafaf" id="okex_BTC_index"> </td>
+                </tr>
+
+                <tr>
+                    <td id="okex__index"></td>
+                </tr>
+
+
+                <!-- Deribit_price -->
+                <tr>
+                    <td class="fafaf">Deribit:</td>
+                    <td id="deribit_BTC_real__price" class="fafaf"></td>
+                </tr>
+
+                <!-- Deribit_index -->
+
+                <tr>
+                    <td class="statindex">Index:</td><td class="fafaf" id="deribit_BTC_index__price"></td>
+                </tr>
+
+                <tr>
+                    <td id="deribit__index"></td>
+                </tr> 
+
+                <tr>
+                    <td class="fafaf">Phemex:</td>
+                    <td id="phemex_BTC_price" class="fafaf"></td>
+                </tr>
+
+
+                <tr>
+                    <td class="statindex">Index:</td><td class="fafaf" id="phemex_BTC__index_price"></td>
+                </tr>
+                <tr>
+
+            </tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+    <!-- Funding part -->
+    <div class="inline">
+        <table>
+            <th class="hstatic" id="myBTCFUNDING">
+                BTC FUNDING RATE
+            </th>
+            <tbody class="color">
+                <tr>
+                    <td class="hstatic">
+                        GLOBAL F:
+                    </td>
+                </tr>
+                <tr class="hstatic">
+                    <td>GLOBAL P:</td>
+                </tr>
+                <tr>
+                    <td>Bitmex</td>
+                </tr>
+                <tr>
+                    <td class="statindex">XBT F: </td><td class="funding___faf" id="bitmex__Funding_rate"></td>
+                    <td class="fafaf"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">XBT P: </td><td class="funding___faf" id="bitmex__Funding_rate2"></td>
+                </tr>
+                <tr>
+                    <td>Binance</td>
+                </tr>
+                <tr>
+                    <td class="statindex">BTC F: </td>
+                    <td id="funding_rate_binancep" class="funding___faf"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">BTCUSD P: </td>
+                    <td id="funding_rate_binancef" class="funding___faf"></td>
+
+
+
+                <tr>
+                    <td class="funding___faf">Bybit</td>
+                </tr>
+                <tr id="bybit_funding-rate">
+                    <td class="statindex">BTC F: </td><td class="funding___faf" id="Bybit__BTC_Funding"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">BTCUSDT P: </td><td class="funding___faf" id="bybit_btcusdt_funding_rate"></td>
+                </tr>
+                <tr>
+                    <td>Okex</td>
+                </tr>
+                <tr>
+                    <td class="statindex">BTC F: </td><td id="Okex_BTC__Funding_rate_F" class="funding___faf"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">BTC P: </td><td class="funding___faf" id="Okex_BTC__Funding_rate_P"></td>
+                </tr>
+                <tr>
+                    <td>HUOBI</td>
+                </tr>
+                <tr>
+                    <td class="statindex">BTC F: </td><td class="funding___faf" id="huobi_BTC_funding_rate"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">BTC P: </td><td class="funding___faf" id="huobi_BTC_funding_rate2"></td>
+                </tr>
+               
+
+            </tbody>
+        </table>
+    </div>
+    <!-- block ETH -->
+    <div class="inline">
+        <table style="width: auto;">
+            <tbody class="color">
+
+                <tr>
+                    <th colspan="2" class="hstatic">ETH PRICES</th>
+                </tr>
+                <tr>
+                    <td class="hstatic" id="myfgdc">GLOBAL 1H:</td>
+                    <td class="hstatic" id="myfgdc">1 MIN: </td>
+                </tr>
+                <tr>
+                    <td class="fafafss">Binance:</td>
+                    <td id="binance__ETH_real__price" class="fafaf"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">Index:</td>
+                    <td id="binance__ETH__index_price" class="fafaf"></td>
+                </tr>
+                <tr>
+                    <td class="fafaf">Bybit:</td><td class="fafaf" id="Bybit__ETH_real__price"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">Index:</td><td class="fafaf" id="Bybit__ETH__index_price"></td>
+                </tr>
+                <tr>
+
+                     <!-- BitMex_Price ETH -->
+
+                
+            </tr>
+
+            <tr>
+                <td class="fafaf">Bitmex:</td><td id="Bitbix__ETH_real__price" class="fafaf"></td>
+                
+            </tr>
+
+            <!-- BitMex_Index ETH-->
+            <tr>
+                <td class="statindex">Index:</td><td class="fafaf" id="Bitmex__ETH__index_price"></td>
+            </tr>
+            <tr>
+                <td id="bitmex__index" class="fafaf">
+            </tr>
+
+<tr>
+</td>
+</tr>
+
+            
+                    <td class="fafaf">Okex:</td><td class="fafaf" id="okex_ETH_price"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">Index:</td><td class="fafaf" id="okex_ETH_index"></td>
+                </tr>
+                <tr>
+                    <td class="fafaf">Deribit:</td><td class="fafaf" id="deribit_ETH_real__price2022"></td>
+                </tr>
+                <tr>
+                    <td class="statindex" colspan="fafaf">Index:</td><td class="fafaf" id="deribit_ETH_index__price"></td>
+                </tr>
+                <tr>
+                    <td>Phemex:</td><td class="fafaf" id="phemex_ETH_real__price"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">Index:</td><td class="fafaf" id="phemex_ETH_Index__price"></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <!-- Funding for Eth -->
+    <div class="inline">
+        <table>
+            <th class="hstatic">
+                ETH FUNDING RATE
+            </th>
+            <tbody class="color">
+                <tr>
+                    <td class="hstatic">
+                        GLOBAL F:
+                    </td>
+                </tr>
+                <tr class="hstatic">
+                    <td>GLOBAL P:</td>
+                </tr>
+                <tr>
+                    <td class="funding___faf">Bitmex</td>
+                </tr>
+                <tr>
+                    <td class="statindex" >ETH F: </td><td id="bitmex_ETH_Funding_rate11" class="funding___faf"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">ETH P: </td><td id="bitmex_ETH_Funding_rate2" class="funding___faf"></td>
+                </tr>
+                <tr>
+                    <td class="funding___faf">Binance</td>
+                    
+                </tr>
+                <tr>
+                    <td class="statindex" class="funding___faf">ETH F: </td><td id="funding_ETH_rate_binancef" class="funding___faf"></td>
+                   
+                </tr>
+                <tr>
+                    <td class="statindex">ETHUSD F: </td> <td id="binance__ETH__fuding2" class="funding___faf"></td>
+                </tr>
+                <tr>
+                    <td class="funding___faf">Bybit</td>
+                </tr>
+                <tr>
+                    <td class="statindex">ETH F: </td><td class="funding___faf" id="Bybit__ETH_Funding1"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">ETH P: </td><td class="funding___faf" id="bybit_eth_usdt_funding_rate2"></td>
+                </tr>
+                <tr>
+                    <td>Okex</td>
+                </tr>
+                <tr>
+                    <td class="statindex">ETH F: </td><td id="Okex_ETH__Funding_rate_F" class="funding___faf"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">ETH P: </td><td class="funding___faf" id="Okex_ETH__Funding_rate_2"></td>
+                </tr>
+                <tr>
+                    <td>HUOBI</td>
+                </tr>
+                <tr>
+                    <td class="statindex">ETH F: </td><td class="funding___faf" id="huobi_ETH_funding_rate"></td>
+                </tr>
+                <tr>
+                    <td class="statindex">ETH P: </td>
+                </tr>
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="ETHUSD.js"></script>
+    <script src="BTCUSD.js"></script>
+    <script src="top bar.js"></script>
+    <script src="ETHUSD_funding_rate.js"></script>
+    <script src="BTCUSD_Funding_rate.js"></script>
+    <!-- <script src="binanace_funding.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+
+
+</body>
+
+</html>

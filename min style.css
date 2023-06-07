@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+
+/* Reset default padding and margin for all elements */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 20px;
+}
+
+/* Header Static Part - Responsive styles */
+.hstatic {
+  color: rgb(235, 156, 11);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background-color: none;
+  padding-left: 25px;
+}
+
+/* Coloring Index Static Part - Responsive styles */
+.statindex {
+  color: #ffabfc;
+  font-weight: 900;
+  font-size: 17px;
+  width: 200px;
+ 
+}
+
+/* Header Style for Table - Responsive styles */
+th {
+  border: 1px solid rgb(92, 90, 90);
+  border-radius: 5px;
+  border-collapse: collapse;
+  background-color: rgb(24, 24, 24);
+  padding: 15px;
+  font-size: 17px;
+  
+}
+
+/* Coloring White - Responsive styles */
+.color {
+  text-decoration: aliceblue;
+  color: #77ccff;
+  font-size: 17px;
+}
+
+/* Inline Tables - Responsive styles */
+.inline {
+  display: inline-table;
+  width: max-content;
+  font-size: 17px;
+  
+}
+
+/* Coloring Background - Responsive styles */
+* {
+  background-color: rgb(36, 33, 33);
+  font-size: 17px;
+}
+
+/* Styling for "fafaf" and "funding___faf" IDs - Responsive styles */
+.fafaf {
+  padding: 5px 23px 0 0;
+  font-weight: 800;
+  
+}
+
+#myBTCFUNDING {
+  width: 180px;
+  
+}
+
+.funding___faf {
+  padding-right: 20px;
+  padding: 5px 23px 0 0;
+  font-weight: 800;
+}
+
+/* Responsive styles for different devices */
+/* For small screens */
+@media screen and (max-width: 600px) {
+  .hstatic {
+    padding-left: 10px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+  .color,
+  .statindex,
+  .fafaf,
+  .funding___faf {
+    font-size: 14px;
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .hstatic {
+    font-size: 0.7rem;
+    padding-left: 15px;
+  }
+
+  th {
+    font-size: 15px;
+  }
+
+  .color,
+  .statindex,
+  .fafaf,
+  .funding___faf {
+    font-size: 15px;
+  }
+}
+
